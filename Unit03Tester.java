@@ -246,7 +246,7 @@ public class Unit03Tester
    
    @Test
     public void testShiftRightStringHelloBy7(){
-        assertEquals("ohell", Unit03.shiftRight("hello", 7));
+        assertEquals("lohel", Unit03.shiftRight("hello", 7));
     }
    
    @Test
