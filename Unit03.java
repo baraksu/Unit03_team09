@@ -17,19 +17,24 @@ public class Unit03{
         return "";
     }
     public static String shiftLeft(String s)    {
-        if (s.length() < 2) {
-        return s;
-    }
-
-    String subS = s.substring(1)
-    String c0 = s.charAt(0);
-    return subS + c0; 
+        if (s.length() < 2) return s;
+        String subS = s.substring(1)
+        String c0 = s.charAt(0);
+        return subS + c0; 
     }
     public static String shiftLeft(String s, int k)    {
-        return "";
+        if (s.length() < 2) return s;
+        if (s.length() < k) k -= s.length();
+        String start = s.substring(k);
+        String end = s.substring(0, k);
+        return start + end;
     }
     public static String shiftRight(String s, int k)    {
-        return "";
+        if (s.length() < 2) return s;
+        if (s.length() < k) k -= s.length();
+        String start = s.substring(s.length() - k);
+        String end = s.substring(0, s.length() - k);
+        return start + end;
     }
     public static int countWords(String s)    {
         return -1;
