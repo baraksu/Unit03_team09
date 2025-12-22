@@ -14,7 +14,13 @@ public class Unit03{
         return -1;
     }
     public static String shiftRight(String s)    {
-        return "";
+        if (s.length() < 2) {
+            return s;
+        }
+
+        String subS = s.substring(1)
+        String c0 = s.charAt(0);
+        return subS + c0;
     }
     public static String shiftLeft(String s)    {
         return "";
